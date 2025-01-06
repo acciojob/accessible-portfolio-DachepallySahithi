@@ -7,32 +7,36 @@
 </head>
 
 <body>
-	<header>
-		<h1 aria-role = "heading">My Protfolio</h1>
-		<nav aria-role = "navigation">
-			<ul>
-				<li>About</li>
-				<li>Projects</li>
-				<li>Contact</li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<img src="portfolio_image.jpg" alt="Image description" aria-role="img">
-		<p>Brief description of my portfolio and my work.</p>
+	<h1 role="heading">Welcome to My Portfolio</h1>
+	<nav role="navigation">
+		<ul role="list">
+			<li role="listitem"><a href="#about">About Me</a></li>
+			<li role="listitem"><a href="#project">Projects</a></li>
+			<li role="listitem"><a href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 
-		<section aria-role="list">
-			<h2>Skills</h2>
-			<ul>
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Java</li>
-			</ul>
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 My Portfolio</p>
-	</footer>
+	<img src="profile.jpg" alt="Profile picture of the website owner" role="img">
+
+	<section id="about">
+		<h2>About Me</h2>
+		<p>Hi, I'm a passionate web developer with for building accessible and user-friendly website.</p>
+		
+	</section>
+
+	<section id="projects">
+		<h2>My Projects</h2>
+		<ul role="list">
+			<li role="listitem">Project 1: Accessible E-commerce Website</li>
+			<li role="listitem">Project 2: Student Library Msnagement</li>
+			
+		</ul>
+	</section>
+
+	<section id="contact">
+		<h2>Contact</h2>
+		<p>Feel free to reach out to me via email at<a href="mailto:email@example.com">email@example.com</a></p>
+	</section>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
